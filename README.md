@@ -29,9 +29,6 @@ js闭包 (私有化)
                  for(var i=0;i<deps.length;i++){
                  deps[i]=models[deps[i]]
                  }
-                 console.log(impl())
-                 var s=impl.apply(impl,deps)
-                 console.log(s)
                  models[name]=impl.apply(impl,deps)
               }
               function get(name){
